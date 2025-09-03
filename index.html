@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font Awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <div class="max-w-[1600px] mx-auto bg-white shadow flex items-center justify-between px-6 py-2">
+        <!-- Left Logo & Title -->
+        <div class="flex items-center gap-2">
+            <img src="./assets/logo.png" alt="Logo" class="w-8 h-8" />
+            <span class="text-sm font-semibold text-green-700">Emergency Service</span>
+        </div>
+
+        <!-- Right Icons -->
+        <div class="flex items-center gap-4">
+            <!-- Heart -->
+            <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
+                <span id="heartCount" class="text-sm font-medium">0</span>
+                <img src="./assets/heart.png" alt="Heart" class="w-4 h-4" />
+            </div>
+
+            <!-- Coin -->
+            <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
+                <span class="text-sm font-medium">100</span>
+                <img src="./assets/coin.png" alt="Coin" class="w-4 h-4" />
+            </div>
+
+            <!-- Button -->
+            <button class="bg-green-700 text-white text-sm font-medium px-4 py-1 rounded-full">
+                <span id="copyCount">0</span> Copy
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Title Section -->
+    <section class="bg-green-900 text-center text-white py-6 max-w-[1600px] mx-auto">
+        <img src="./assets/logo-dark.png" class="w-16 mx-auto mb-2">
+        <h1 class="text-2xl font-bold">Emergency Service Directory</h1>
+        <p class="text-sm mt-1">Government Emergency Services at Your Fingertips - A Project by Government of The
+            People’s Republic of Bangladesh</p>
+    </section>
+
+
+
+    <div class=" max-w-[1600px] mx-auto bg-green-50 p-6">
+        <div class="grid grid-cols-4 gap-6 max-w-[1200px] mx-auto">
+
+            <!-- Left: Emergency Number Cards -->
+            <div class="col-span-3 grid grid-cols-3 gap-6">
+
+                <!-- Single Card -->
+                <div
+                   id="card-1"  class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/emergency.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button id="heart-1" class="text-gray-500 hover:text-red-500 text-xl"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p id="serviceName" class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p id="serviceNumber" class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button 
+                            id="copybtn" class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                           id="callBtn1" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/police.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/fire-service.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/ambulance.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/emergency.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/emergency.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/emergency.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/emergency.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    <!-- Top Section -->
+                    <div>
+                        <div class="flex items-start justify-between">
+                            <!-- Icon -->
+                            <img src="./assets/Bangladesh-Railway.png" alt="Icon" class="w-7 h-7" />
+                            <!-- Favorite Button -->
+                            <button class="text-gray-500 hover:text-red-500 text-xl">♡</button>
+                        </div>
+
+                        <!-- Title -->
+                        <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
+                        <p class="text-sm text-gray-500">National Emergency Service</p>
+
+                        <!-- Number -->
+                        <p class="text-3xl font-bold mt-2">999</p>
+
+                        <!-- Tag -->
+                        <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
+                            সার্বক্ষণিক
+                        </span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="flex gap-2 mt-4">
+                        <button
+                            class="flex-1 border rounded-lg py-2 text-sm hover:bg-gray-100 flex items-center justify-center gap-1">
+                            📋 Copy
+                        </button>
+                        <button
+                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            📞 Call
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+            <!-- Right: Call History -->
+            <div class="col-span-1 bg-white shadow-md rounded-2xl p-4">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="font-semibold text-sm">📜 Call History</h2>
+                    <button class="text-xs bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">Clear</button>
+
+                    </div>
+
+                    <div id="callHistory" class="space-y-2"></div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./javaScript/control.js"></script>
+
+</body>
+
+</html>
