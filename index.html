@@ -19,33 +19,33 @@
         <!-- Left Logo & Title -->
         <div class="flex items-center gap-2">
             <img src="./assets/logo.png" alt="Logo" class="w-8 h-8" />
-            <span class="text-sm font-semibold text-green-700">Emergency Service</span>
+            <span class="text-[20px] font-semibold text-green-700">Emergency <br> Service</span>
         </div>
 
         <!-- Right Icons -->
         <div class="flex items-center gap-4">
             <!-- Heart -->
             <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
-                <span id="heartCount" class="text-sm font-medium">0</span>
-                <img src="./assets/heart.png" alt="Heart" class="w-4 h-4" />
+                <span id="heartCount" class="text-[25px] font-medium">0</span>
+                <img src="./assets/heart.png" alt="Heart" class="w-[30px] h-[30pxpx] text-" />
             </div>
 
             <!-- Coin -->
             <div class="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
-                <span class="text-sm font-medium">100</span>
-                <img src="./assets/coin.png" alt="Coin" class="w-4 h-4" />
+                <span class="text-[25px] font-medium" id="coin">100</span>
+                <img src="./assets/coin.png" alt="Coin" class="w-[30px]" />
             </div>
 
             <!-- Button -->
-            <button class="bg-green-700 text-white text-sm font-medium px-4 py-1 rounded-full">
-                <span id="copyCount">0</span> Copy
+            <button class="bg-green-700 text-white text-[25px] font-medium px-4 py-1 rounded-full">
+                <span id="copyCount" >0</span> Copy
             </button>
         </div>
     </div>
 
 
     <!-- Title Section -->
-    <section class="bg-green-900 text-center text-white py-6 max-w-[1600px] mx-auto">
+    <section class="bg-green-900 text-center text-white py-6 max-w-[1600px] h-[200px ] mx-auto">
         <img src="./assets/logo-dark.png" class="w-16 mx-auto mb-2">
         <h1 class="text-2xl font-bold">Emergency Service Directory</h1>
         <p class="text-sm mt-1">Government Emergency Services at Your Fingertips - A Project by Government of The
@@ -55,14 +55,14 @@
 
 
     <div class=" max-w-[1600px] mx-auto bg-green-50 p-6">
-        <div class="grid grid-cols-4 gap-6 max-w-[1200px] mx-auto">
+        <div class="grid grid-cols-4 gap-6">
 
             <!-- Left: Emergency Number Cards -->
-            <div class="col-span-3 grid grid-cols-3 gap-6">
+            <div class="col-span-3 grid grid-cols-3 gap-4">
 
                 <!-- Single Card -->
                 <div
-                   id="card-1"  class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                   id="card-1"  class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -99,7 +99,7 @@
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -111,10 +111,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-2">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-2">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -129,14 +129,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn2" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -148,10 +148,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-3">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-3">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -166,14 +166,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn3" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -185,10 +185,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-4">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-4">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -203,14 +203,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn4" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -222,10 +222,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-5">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-5">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -240,14 +240,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn5" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -259,10 +259,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-6">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-6">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -277,14 +277,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn6" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -296,10 +296,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-7">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-7">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -314,14 +314,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn7" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -333,10 +333,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-8">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-5">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -351,14 +351,14 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn8" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white shadow rounded-2xl p-4 w-[260px] flex flex-col justify-between hover:shadow-lg transition">
+                    class="bg-white shadow rounded-2xl p-4 w-[300px] flex flex-col justify-between hover:shadow-lg transition">
                     <!-- Top Section -->
                     <div>
                         <div class="flex items-start justify-between">
@@ -370,10 +370,10 @@
 
                         <!-- Title -->
                         <h2 class="font-semibold text-base mt-2">জাতীয় জরুরি সেবা</h2>
-                        <p class="text-sm text-gray-500">National Emergency Service</p>
+                        <p class="text-sm text-gray-500" id="serviceName-9">National Emergency Service</p>
 
                         <!-- Number -->
-                        <p class="text-3xl font-bold mt-2">999</p>
+                        <p class="text-3xl font-bold mt-2" id="serviceNumber-9">999</p>
 
                         <!-- Tag -->
                         <span class="inline-block text-xs bg-gray-100 px-3 py-1 rounded-full mt-2">
@@ -388,7 +388,7 @@
                             📋 Copy
                         </button>
                         <button
-                            class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
+                            id="callBtn9" class="flex-1 bg-green-600 text-white rounded-lg py-2 text-sm hover:bg-green-700 flex items-center justify-center gap-1">
                             📞 Call
                         </button>
                     </div>

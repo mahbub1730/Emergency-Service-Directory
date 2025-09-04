@@ -1,4 +1,4 @@
-document.getElementById("heart-1").addEventListener("click", function() {
+document.getElementById("heart-1").addEventListener("click", function () {
   // console.log("heart clicked")
   const heartCount = parseInt(document.getElementById("heartCount").innerText)
 
@@ -8,8 +8,8 @@ document.getElementById("heart-1").addEventListener("click", function() {
 })
 
 // copy Button control
-document.getElementById("copybtn").addEventListener("click", function() {
-  const copyCountNumber =parseInt(document.getElementById("copyCount").innerText)
+document.getElementById("copybtn").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
 
   const totalCopy = copyCountNumber + 1
   document.getElementById("copyCount").innerText = totalCopy
@@ -18,17 +18,21 @@ document.getElementById("copybtn").addEventListener("click", function() {
 
 
 // call Button ---> 1 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn1").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
   const serviceName = document.getElementById("serviceName").innerText
   const serviceNumber = document.getElementById("serviceNumber").innerText
   const callHistory = document.getElementById("callHistory")
 
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
+
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -39,17 +43,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 2 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn2").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-2").innerText
+  const serviceNumber = document.getElementById("serviceNumber-2").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -60,17 +68,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 3 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn3").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-3").innerText
+  const serviceNumber = document.getElementById("serviceNumber-3").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -81,17 +93,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 4 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn4").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-4").innerText
+  const serviceNumber = document.getElementById("serviceNumber-4").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -102,17 +118,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 5 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn5").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-5").innerText
+  const serviceNumber = document.getElementById("serviceNumber-5").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -123,17 +143,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 6 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn6").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-6").innerText
+  const serviceNumber = document.getElementById("serviceNumber-6").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -144,17 +168,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 7 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn7").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-7").innerText
+  const serviceNumber = document.getElementById("serviceNumber-7").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -165,17 +193,21 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 8 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn8").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-8").innerText
+  const serviceNumber = document.getElementById("serviceNumber-8").innerText
   const callHistory = document.getElementById("callHistory")
+
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -186,17 +218,23 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 });
 
 // call Button ---> 9 
-document.getElementById("callBtn1").addEventListener("click", function() {
+document.getElementById("callBtn9").addEventListener("click", function () {
   alert("Calling Emergency Number...")
 
-  const serviceName = document.getElementById("serviceName").innerText
-  const serviceNumber = document.getElementById("serviceNumber").innerText
+  const serviceName = document.getElementById("serviceName-9").innerText
+  const serviceNumber = document.getElementById("serviceNumber-9").innerText
   const callHistory = document.getElementById("callHistory")
+
+  // (-) 20 coin per call
+  const CoinNumber = parseInt(document.getElementById("coin").innerText)
+  const TotalNumber = CoinNumber - 20
+  document.getElementById("coin").innerText = TotalNumber;
+
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-   const div = document.createElement("div");
+  const div = document.createElement("div");
   div.classList.add("border-b", "pb-2", "mb-2");
   div.innerHTML = `
     <p class="font-medium">${serviceName}</p>
@@ -211,42 +249,3 @@ document.getElementById("callBtn1").addEventListener("click", function() {
 document.getElementById("clearBtn").addEventListener("click", () => {
   callHistory.innerHTML = "";
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Call Button Click Event 
-// callBtn1.addEventListener("click", function () { 
-//   alert("Calling Emergency Number..."); 
-//   // serviceName and serviceNumber copy 
-//   const serviceName = document.getElementById("serviceName").innerText; 
-//   const serviceNumber = document.getElementById("serviceNumber").innerText;
-//    // time manage 
-//    const now = new Date(); const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-//     // History item 
-//     const div = document.createElement("div"); 
-//     div.classList.add("border-b", "pb-2", "mb-2"); 
-//     div.innerHTML = `<p class="font-medium">${serviceName}</p> 
-//     <p class="text-gray-500 text-xs">${serviceNumber} • ${time}</p> ; 
-//     callHistory.prepend(div)`; });
-    
-//      // Clear Button Click Event 
-//      clearBtn.addEventListener("click", () => {
-//        callHistory.innerHTML = ""; 
-//       })
-
-
-
-
