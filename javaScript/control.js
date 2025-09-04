@@ -1,5 +1,5 @@
+// heart button control start from here
 document.getElementById("heart-1").addEventListener("click", function () {
-  // console.log("heart clicked")
   const heartCount = parseInt(document.getElementById("heartCount").innerText)
 
   const clicked = heartCount + 1
@@ -7,14 +7,152 @@ document.getElementById("heart-1").addEventListener("click", function () {
 
 })
 
+document.getElementById("heart-2").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-3").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-4").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-5").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-6").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-7").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-8").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+document.getElementById("heart-9").addEventListener("click", function () {
+  const heartCount = parseInt(document.getElementById("heartCount").innerText)
+
+  const clicked = heartCount + 1
+  document.getElementById("heartCount").innerText = clicked
+
+})
+
+
+
+
+
+
 // copy Button control
-document.getElementById("copybtn").addEventListener("click", function () {
+document.getElementById("copybtn1").addEventListener("click", function () {
   const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
 
   const totalCopy = copyCountNumber + 1
   document.getElementById("copyCount").innerText = totalCopy
 
 })
+
+document.getElementById("copybtn2").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn3").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn4").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn5").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn6").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn7").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn8").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+document.getElementById("copybtn9").addEventListener("click", function () {
+  const copyCountNumber = parseInt(document.getElementById("copyCount").innerText)
+
+  const totalCopy = copyCountNumber + 1
+  document.getElementById("copyCount").innerText = totalCopy
+
+})
+
+
+
+
+
 
 
 // call Button ---> 1 
@@ -28,6 +166,11 @@ document.getElementById("callBtn1").addEventListener("click", function () {
   const CoinNumber = parseInt(document.getElementById("coin").innerText)
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -54,6 +197,12 @@ document.getElementById("callBtn2").addEventListener("click", function () {
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
 
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
+
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
@@ -78,6 +227,12 @@ document.getElementById("callBtn3").addEventListener("click", function () {
   const CoinNumber = parseInt(document.getElementById("coin").innerText)
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
+
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -104,6 +259,12 @@ document.getElementById("callBtn4").addEventListener("click", function () {
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
 
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
+
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
@@ -128,6 +289,12 @@ document.getElementById("callBtn5").addEventListener("click", function () {
   const CoinNumber = parseInt(document.getElementById("coin").innerText)
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
+
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -154,6 +321,12 @@ document.getElementById("callBtn6").addEventListener("click", function () {
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
 
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
+
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
@@ -179,6 +352,12 @@ document.getElementById("callBtn7").addEventListener("click", function () {
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
 
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
+
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
@@ -203,6 +382,12 @@ document.getElementById("callBtn8").addEventListener("click", function () {
   const CoinNumber = parseInt(document.getElementById("coin").innerText)
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
+
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -230,6 +415,12 @@ document.getElementById("callBtn9").addEventListener("click", function () {
   const TotalNumber = CoinNumber - 20
   document.getElementById("coin").innerText = TotalNumber;
 
+  if(TotalNumber < 0) {
+    alert("You have no Balance")
+    document.getElementById("coin").innerText = 0
+    return;
+  }
+
 
   const now = new Date();
   const time = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -243,6 +434,8 @@ document.getElementById("callBtn9").addEventListener("click", function () {
 
   callHistory.prepend(div);
 });
+
+
 
 // Clear Button Click Event
 
